@@ -22,27 +22,54 @@
 {
     address = newAddy;
 }
+-(NSString*) getAddress
+{
+    return address;
+}
 -(void) setMidterm: (Float32Point) newMid;
 {
     midterm = newMid;
+}
+-(Float32Point) getMidterm
+{
+    return midterm;
 }
 -(void) setFinal: (Float32Point) newFin;
 {
     final = newFin;
 }
--(void)setHW1{
-    
+-(Float32Point) getFinal
+{
+    return final;
 }
--(void)setHW2{
-    
+-(void) setHW1: (int) newhw;
+{
+    hw1 = newhw;
 }
--(void)setHW3{
-    
+-(int) getHW1
+{
+    return hw1;
+}
+-(void) setHW2: (int) newhw;
+{
+    hw2 = newhw;
+}
+-(int) getHW2
+{
+    return hw2;
+}
+-(void) setHW3: (int) newhw;
+{
+    hw3 = newhw;
+}
+-(int) getHW3
+{
+    return hw3;
 }
 
 -(void) printObject
 {
-    
+    NSLog(@"Address: %@ HW1: %int", [self getAddress], [self getHW1]);
 }
 -(BOOL) addStudent
 {

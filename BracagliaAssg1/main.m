@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StudentInfo.h"
+#import "StudentInfo.m"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSMutableDictionary *course = [[NSMutableDictionary alloc] initWithCapacity:2];
-        /*StudentInfo *s1 =
-        [course setObject:(StudentInfo) forKey:@"Joan Watson"];*/
+        StudentInfo *mystud = [StudentInfo new];
+        [mystud setAddress:@"New York"];
+        [mystud setHW1:(int)10];
+        [course setObject:mystud forKey:@"Joan Watson"];
         
         NSLog(@"Hello, World!");
     }
