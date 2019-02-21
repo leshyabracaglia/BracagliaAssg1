@@ -9,13 +9,13 @@
 #import "StudentInfo.h"
 
 @implementation StudentInfo
-    
-    NSString *address;
-    Float32Point midterm;
-    Float32Point final;
-    int hw1;
-    int hw2;
-    int hw3;
+
+@synthesize address;
+@synthesize midterm;
+@synthesize final;
+@synthesize hw1;
+@synthesize hw2;
+@synthesize hw3;
 
 
 -(void) setAddress: (NSString*) newAddy;
@@ -26,19 +26,19 @@
 {
     return address;
 }
--(void) setMidterm: (Float32Point) newMid;
+-(void) setMidterm: (double) newMid;
 {
     midterm = newMid;
 }
--(Float32Point) getMidterm
+-(double) getMidterm
 {
     return midterm;
 }
--(void) setFinal: (Float32Point) newFin;
+-(void) setFinal: (double) newFin;
 {
     final = newFin;
 }
--(Float32Point) getFinal
+-(double) getFinal
 {
     return final;
 }
@@ -66,27 +66,19 @@
 {
     return hw3;
 }
-
 -(void) printObject
 {
-    NSLog(@"Address: %@ HW1: %int", [self getAddress], [self getHW1]);
+    NSLog(@"Address: %@", address);
+    NSLog(@"Midterm: %f", midterm);
+    NSLog(@"Final: %f", final);
+    NSLog(@"HW1: %d", hw1);
+    NSLog(@"HW2: %d", hw2);
+    NSLog(@"HW3: %d", hw3);
 }
--(BOOL) addStudent
-{
-    return YES;
-}
--(BOOL) addTest
-{
-    return YES;
-}
-
--(BOOL) addHomework
-{
-    return YES;
-}
-
 -(BOOL) studentAverage
 {
+    double ave = (0.3*midterm) + (0.4*final) + (0.3*(hw1+hw2+hw3)/3);
+    NSLog(@"Average: %d", ave);
     return YES;
 }
 

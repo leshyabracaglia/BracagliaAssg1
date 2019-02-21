@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EAC84AC12218B83D004D05EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC84AC02218B83D004D05EB /* main.m */; };
 		EAC84AC92218BCA5004D05EB /* StudentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC84AC82218BCA5004D05EB /* StudentInfo.m */; };
+		EAC84AD2221CC6AC004D05EB /* Courses.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC84AD1221CC6AC004D05EB /* Courses.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		EAC84AC02218B83D004D05EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EAC84AC72218BCA5004D05EB /* StudentInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentInfo.h; sourceTree = "<group>"; };
 		EAC84AC82218BCA5004D05EB /* StudentInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentInfo.m; sourceTree = "<group>"; };
+		EAC84AD0221CC6AC004D05EB /* Courses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Courses.h; sourceTree = "<group>"; };
+		EAC84AD1221CC6AC004D05EB /* Courses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Courses.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				EAC84AC02218B83D004D05EB /* main.m */,
+				EAC84AD0221CC6AC004D05EB /* Courses.h */,
+				EAC84AD1221CC6AC004D05EB /* Courses.m */,
 				EAC84AC72218BCA5004D05EB /* StudentInfo.h */,
 				EAC84AC82218BCA5004D05EB /* StudentInfo.m */,
 			);
@@ -124,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC84AC12218B83D004D05EB /* main.m in Sources */,
+				EAC84AD2221CC6AC004D05EB /* Courses.m in Sources */,
 				EAC84AC92218BCA5004D05EB /* StudentInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

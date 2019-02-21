@@ -10,19 +10,32 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface StudentInfo : NSObject
+@interface StudentInfo : NSObject{
+    NSString *address;
+    double midterm;
+    double finals;
+    int hw1;
+    int hw2;
+    int hw3;
+}
 
--(void) printObject;
--(BOOL) addStudent;
--(BOOL) addTest;
--(BOOL) addHomework;
+@property (nonatomic) int numerator;
+@property (nonatomic) int denominator;
+@property (nonatomic) NSString *address;
+@property (nonatomic) double midterm;
+@property (nonatomic) double final;
+@property (nonatomic) int hw1;
+@property (nonatomic) int hw2;
+@property (nonatomic) int hw3;
+
 -(BOOL) studentAverage;
+-(void) printObject;
 -(void) setAddress: (NSString*) newAddy;
 -(NSString*) getAddress;
--(void) setMidterm: (Float32Point) newMid;
--(Float32Point) getMidterm;
--(void) setFinal: (Float32Point) newFin;
--(Float32Point) getFinal;
+-(void) setMidterm: (double) newMid;
+-(double) getMidterm;
+-(void) setFinal: (double) newFin;
+-(double) getFinal;
 -(void) setHW1: (int) newhw;
 -(int) getHW1;
 -(void) setHW2: (int) newhw;
